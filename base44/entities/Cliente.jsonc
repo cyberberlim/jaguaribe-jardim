@@ -1,0 +1,22 @@
+{
+  "name": "Cliente",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "total_compras": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "nome"
+  ]
+}
