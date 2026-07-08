@@ -1,0 +1,27 @@
+{
+  "name": "DespesaVariavel",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "valor": {
+      "type": "number"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "lancado": {
+      "type": "boolean",
+      "default": false
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "nome",
+    "valor"
+  ]
+}
