@@ -1,0 +1,52 @@
+{
+  "name": "HistoricoEstoque",
+  "type": "object",
+  "properties": {
+    "lote_id": {
+      "type": "string"
+    },
+    "lote_nome": {
+      "type": "string"
+    },
+    "cliente": {
+      "type": "string"
+    },
+    "cliente_nome": {
+      "type": "string"
+    },
+    "entregador": {
+      "type": "string"
+    },
+    "entregador_nome": {
+      "type": "string"
+    },
+    "gramatura": {
+      "type": "number"
+    },
+    "produto": {
+      "type": "string"
+    },
+    "caixas": {
+      "type": "number"
+    },
+    "horario": {
+      "type": "string"
+    },
+    "peso_antes": {
+      "type": "number"
+    },
+    "peso_depois": {
+      "type": "number"
+    },
+    "rendimento": {
+      "type": "number"
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "lote_nome"
+  ]
+}
