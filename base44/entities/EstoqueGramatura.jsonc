@@ -1,0 +1,22 @@
+{
+  "name": "EstoqueGramatura",
+  "type": "object",
+  "properties": {
+    "estoque_id": {
+      "type": "string"
+    },
+    "gramatura": {
+      "type": "number"
+    },
+    "quantidade": {
+      "type": "number"
+    },
+    "peso": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "estoque_id",
+    "gramatura"
+  ]
+}
