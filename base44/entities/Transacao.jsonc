@@ -1,0 +1,32 @@
+{
+  "name": "Transacao",
+  "type": "object",
+  "properties": {
+    "descricao": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "entrada",
+        "saida"
+      ],
+      "default": "entrada"
+    },
+    "valor": {
+      "type": "number"
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "categoria": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "descricao",
+    "tipo",
+    "valor"
+  ]
+}
