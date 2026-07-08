@@ -1,0 +1,39 @@
+{
+  "name": "Funcionario",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "cargo": {
+      "type": "string"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ativo",
+        "inativo"
+      ],
+      "default": "ativo"
+    },
+    "chave_pix": {
+      "type": "string"
+    },
+    "tipo_chave_pix": {
+      "type": "string",
+      "enum": [
+        "cpf",
+        "email",
+        "telefone",
+        "aleatoria"
+      ],
+      "default": "cpf"
+    }
+  },
+  "required": [
+    "nome"
+  ]
+}
