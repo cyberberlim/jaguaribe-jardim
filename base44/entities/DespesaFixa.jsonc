@@ -1,22 +1,23 @@
 {
-  "name": "Cliente",
+  "name": "DespesaFixa",
   "type": "object",
   "properties": {
     "nome": {
       "type": "string"
     },
-    "telefone": {
-      "type": "string"
+    "valor": {
+      "type": "number"
     },
-    "cidade": {
-      "type": "string"
+    "dia_vencimento": {
+      "type": "number"
     },
-    "total_compras": {
-      "type": "number",
-      "default": 0
+    "lancado": {
+      "type": "boolean",
+      "default": false
     }
   },
   "required": [
-    "nome"
+    "nome",
+    "valor"
   ]
 }
