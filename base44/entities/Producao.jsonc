@@ -1,0 +1,58 @@
+{
+  "name": "Producao",
+  "type": "object",
+  "properties": {
+    "funcionario_id": {
+      "type": "string"
+    },
+    "funcionario_nome": {
+      "type": "string"
+    },
+    "servico": {
+      "type": "string",
+      "enum": [
+        "PPV",
+        "Descabe\u00e7amento",
+        "Fil\u00e9"
+      ]
+    },
+    "peso": {
+      "type": "number"
+    },
+    "valor": {
+      "type": "number"
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "turno": {
+      "type": "string",
+      "enum": [
+        "Manha",
+        "Tarde",
+        "Noite"
+      ]
+    },
+    "lote": {
+      "type": "string"
+    },
+    "codigo_pagamento": {
+      "type": "string"
+    },
+    "status_pagamento": {
+      "type": "string",
+      "enum": [
+        "Pendente",
+        "Pago"
+      ],
+      "default": "Pendente"
+    }
+  },
+  "required": [
+    "funcionario_nome",
+    "servico",
+    "peso",
+    "valor"
+  ]
+}
