@@ -1,0 +1,22 @@
+{
+  "name": "Estoque",
+  "type": "object",
+  "properties": {
+    "nome_lote": {
+      "type": "string"
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "fornecedor": {
+      "type": "string"
+    },
+    "peso_total": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "nome_lote"
+  ]
+}
